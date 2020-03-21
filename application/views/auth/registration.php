@@ -14,17 +14,29 @@
                                 <div class="card-body">
                                     <form action="<?= base_url('auth'); ?>">
                                         <div class="form-group">
+                                            <input type="text" class="form-control input-login" id="name" name="name" placeholder="Fullname">
+                                        </div>
+                                        <div class="form-group">
                                             <input type="text" class="form-control input-login" id="email" name="email" placeholder="Email Address">
                                         </div>
-                                        <div class="form-group mb-4">
-                                            <input type="password" class="form-control input-login" id="password" name="password" placeholder="Password">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control input-login" id="password" name="password" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group mb-4">
+                                                    <input type="password" class="form-control input-login" id="repeat_password" name="repeat_password" placeholder="Confirm Password">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <button type="submit" class="btn btn-login btn-block">Sign In</button>
+                                        <button type="submit" class="btn btn-login btn-block">Sign Up</button>
                                     </form>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <p class="small text-white font-weight-bold">Don't have an account yet ?<br><a class="text-dark" href="<?= base_url('auth/registration'); ?>">Sign Up</a></p>
+                                <p class="small text-white font-weight-bold">Already have an account ?<br><a class="text-dark" href="<?= base_url('auth'); ?>">Sign In</a></p>
                             </div>
                         </div>
                     </div>
