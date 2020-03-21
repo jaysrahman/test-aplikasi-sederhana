@@ -18,12 +18,22 @@
                                 </div>
                                 <div class="card-body">
                                     <?= $this->session->flashdata('message'); ?>
-                                    <form action="<?= base_url('auth'); ?>">
+                                    <form action="<?= base_url('auth'); ?>" method="POST">
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-login" id="username" name="username" placeholder="Username">
+                                            <?php if (form_error('username', '<div class="invalid-feedback pl-2">', '</div>')) : ?>
+                                                <input type="text" class="form-control form-control-user is-invalid input-login" id="username" name="username" placeholder="Username" value="<?= set_value('username'); ?>">
+                                                <?= form_error('username', '<div class="invalid-feedback pl-2">', '</div>'); ?>
+                                            <?php else : ?>
+                                                <input type="text" class="form-control form-control-user input-login" id="username" name="username" placeholder="Username" value="<?= set_value('username'); ?>">
+                                            <?php endif; ?>
                                         </div>
                                         <div class="form-group mb-4">
-                                            <input type="password" class="form-control input-login" id="password" name="password" placeholder="Password">
+                                            <?php if (form_error('password', '<div class="invalid-feedback pl-2">', '</div>')) : ?>
+                                                <input type="password" class="form-control form-control-user is-invalid input-login" id="password" name="password" placeholder="Password">
+                                                <?= form_error('password', '<div class="invalid-feedback pl-2">', '</div>'); ?>
+                                            <?php else : ?>
+                                                <input type="password" class="form-control form-control-user input-login" id="password" name="password" placeholder="Password">
+                                            <?php endif; ?>
                                         </div>
                                         <button type="submit" class="btn btn-login btn-block">Sign In</button>
                                     </form>
