@@ -1,0 +1,32 @@
+.bg-login {
+	background-color: #588B8A;
+}
+
+.border-login {
+	border: 5px solid #588B8A;
+	border-radius: 20%;
+}
+
+.title-login {
+	color: rgb(236, 166, 27);
+	box-shadow: 0px 5px 15px #e4e4e4;
+	font-weight: 600;
+}
+
+.card-login {
+	box-shadow: 5px 5px 20px #626262;
+}
+
+.input-login {
+	background-color: #F7F9F9;
+}
+
+.btn-login {
+	background-color: #1A535C;
+	color: white;
+}
+
+.btn-login:hover {
+	background-color: rgb(20, 64, 71);
+	color: white;
+}
