@@ -17,6 +17,7 @@
                                     <?= strtoupper($title); ?>
                                 </div>
                                 <div class="card-body">
+                                    <?= $this->session->flashdata('message'); ?>
                                     <form action="<?= base_url('auth'); ?>">
                                         <div class="form-group">
                                             <input type="text" class="form-control input-login" id="username" name="username" placeholder="Username">
