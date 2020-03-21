@@ -5,7 +5,12 @@
                 <img src="<?= base_url('assets/img/bg-auth.png'); ?>" class="card-img" alt="bg-login">
                 <div class="card-img-overlay">
                     <div class="row mt-5">
-                        <div class="col-lg-4 ml-5"></div>
+                        <div class="col-lg-2 copyright">
+                            <div class="text-left">
+                                <span class="small font-weight-bold">&copy; Jays <?= date('Y'); ?></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 ml-5"></div>
                         <div class="col-lg-7">
                             <div class="card mt-5 card-login mb-4">
                                 <div class="card-header bg-white title-login border-light">
@@ -14,7 +19,7 @@
                                 <div class="card-body">
                                     <form action="<?= base_url('auth'); ?>">
                                         <div class="form-group">
-                                            <input type="text" class="form-control input-login" id="email" name="email" placeholder="Email Address">
+                                            <input type="text" class="form-control input-login" id="username" name="username" placeholder="Username">
                                         </div>
                                         <div class="form-group mb-4">
                                             <input type="password" class="form-control input-login" id="password" name="password" placeholder="Password">

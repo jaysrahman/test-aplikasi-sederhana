@@ -8,7 +8,7 @@
 }
 
 .title-login {
-	color: rgb(236, 166, 27);
+	color: #FFBA33;
 	box-shadow: 0px 5px 15px #e4e4e4;
 	font-weight: 600;
 }
@@ -29,4 +29,9 @@
 .btn-login:hover {
 	background-color: rgb(20, 64, 71);
 	color: white;
+}
+
+.copyright {
+	margin-top: 63%;
+	color: #FFBA33;
 }
