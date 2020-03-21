@@ -9,4 +9,4 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
 </head>
 
-<body class="bg-<?= $bgc; ?>">
+<body class="bgc">

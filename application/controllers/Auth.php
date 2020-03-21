@@ -10,7 +10,6 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
             $data['title'] = 'Login';
-            $data['bgc']   = 'login';
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
@@ -26,7 +25,7 @@ class Auth extends CI_Controller
                         'username' => $user_valid['username']
                     ];
                     $this->session->set_userdata($data);
-                    redirect('home');
+                    redirect('menu');
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Username or password is wrong</div>');
                     redirect('auth');
@@ -49,7 +48,6 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == FALSE) {
             $data['title'] = 'Registration';
-            $data['bgc'] = 'login';
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
