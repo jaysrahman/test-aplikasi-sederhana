@@ -15,6 +15,7 @@
                             <div class="card mt-5 card-login mb-4">
                                 <div class="card-header bg-white title-login border-light">
                                     Hello, <?= ucfirst($this->session->userdata('username')); ?>
+                                    <a href="<?= base_url('auth/logout'); ?>" class="float-right text-dark">Logout</a>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">

@@ -13,3 +13,22 @@
 </head>
 
 <body class="bgc">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="card card-login">
+                    <div class="card-header bg-white title-login border-light text-center">
+                        Menu
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <a href="<?= base_url('menu/logic'); ?>" class="btn btn-login btn-block text-white">Logic</a>
+                            </div>
+                            <div class="col">
+                                <a href="<?= base_url('menu/database'); ?>" class="btn btn-login btn-block text-white">Database</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
