@@ -1,7 +1,7 @@
 # test-aplikasi-sederhana
 Membuat aplikasi sederhana untuk keperluan melamar pekerjaan
 
-**Software yang Dipakai : **  
+**Software yang Dipakai**  
 1. MySQL
 2. PHP 7.4.1
 3. Codeigniter 3.1.11
