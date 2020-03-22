@@ -2,9 +2,9 @@
 Membuat aplikasi sederhana untuk keperluan melamar pekerjaan
 
 **Software yang Dipakai : **  
-*MySQL
-*PHP 7.4.1
-*Codeigniter 3.1.11
+1. MySQL
+2. PHP 7.4.1
+3. Codeigniter 3.1.11
 
 **Cara Penggunaan**
 1. Nyalak Apache dan Mysql nya.
