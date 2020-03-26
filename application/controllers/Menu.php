@@ -32,7 +32,15 @@ class Menu extends CI_Controller
                 'school' => htmlspecialchars($this->input->post('school', true))
             ];
             $this->db->insert('user_data', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulations! Your data has been added!</div>');
+            $this->session->set_flashdata(
+                'message',
+                '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                New data has been added
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>'
+            );
             redirect('menu/database');
         }
     }

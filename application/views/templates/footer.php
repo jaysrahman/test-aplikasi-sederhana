@@ -11,10 +11,10 @@
             </div>
             <div class="row">
                 <div class="col mt-2">
-            <div class="text-center">
-                                <span class="small font-weight-bold">&copy; Jays <?= date('Y'); ?></span>
-                            </div>
-                            </div>
+                    <div class="text-center">
+                        <span class="small font-weight-bold">&copy; Jays <?= date('Y'); ?></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
